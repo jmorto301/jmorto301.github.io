@@ -3,77 +3,135 @@
   <head>
     <!-- Page setup -->
     <meta charset="utf-8">
-    <title>Your title here</title>
-    <meta name="description" content="A brief description of your site for search engines">
-    <meta name="author" content="Information about the author here">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>James Morton Portfolio</title>
+    <meta name="description" content="Portfolio website">
+    <meta name="author" content="James Morton">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="icon" type="image/png" href="favicon.png">
   
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
+
     <!-- Custom styles -->
     <link href="style.css" rel="stylesheet" type="text/css" />
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
+
   </head>
   
   <body>
 
     <header id="header">
       <img src="logo.png">
-      <h1>Simple Website</h1>
-      
+      <h1>James Morton Portfolio</h1>
+
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
         <li><a href="#home">home</a></li>
         <li><a href="#about">about</a></li>
         <li><a href="#contact">contact</a></li>
-      </ul>                 
+        <li><a href="#projects">projects</a></li>
+      </ul>
     </header>
-   
+
     <div id="container">
       <div class="inner">
-        <div id="content"> 
-          
+        <div id="content">
+
           <div id="home" class="content-region hide">
             <h2>Home</h2>
             <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/zirafa/simple-website-template">Fork this repository</a> to create your own site!
+              Portfolio Website created using <a href="https://github.com/zirafa/simple-website-template">Simple Website Template</a>
             </p>
           </div>
-          
+
           <div id="about" class="content-region hide">
             <h2>About</h2>
             <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
+              Graduate Game Developer
             </p>
+			<p>
+			  A technically minded graduate with a passion for engine-level development and a strong foundation in C++.
+			</p>
           </div>
-          
+
           <div id="contact" class="content-region hide">
             <h2>Contact</h2>
             <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
+              jamesmorton6@gmail.com
             </p>
           </div>
-          
+
+          <div id="projects" class="content-region hide">
+            <h2>Projects</h2>
+			
+            <p>
+			  <section>
+			    <p>
+                  <a href="https://jmorto301.itch.io/gpu-rain-prototype/">Rain Prototype</a>
+				</p>
+				<p>
+				  <img src="https://img.itch.zone/aW1hZ2UvNDQ5OTgyOC8yNjgyNjE4Ny5qcGVn/347x500/7yeB9G.jpeg" style="width:194px;height:128px;"></a>
+				</p>
+			    <p>
+				  To gain a better understanding of GPU instancing and using OpenGL a small rain simulation prototype was created.
+			    </p>
+				<p>
+				  During development, the builds were put through stress tests, by rendering increasing numbers of raindrops and measuring the performance with profiling tools and in built performance tools, which helped identify various bottlenecks and areas for optimisation.
+				</p>
+			    <p>
+                  More detail about this is available on the project page on Itch.io, along with the shader source code and compiled project.
+				</p>
+			  </section>
+            </p>
+			
+            <p>
+			  <section>
+			    <p>
+				  <a href="https://gcugames.itch.io/ascension">Ascension</a>
+				</p>
+				<p>
+				  <img src="https://img.itch.zone/aW1nLzIwNzI0MDgwLnBuZw==/original/1lqD66.png" style="width:256px;height:128px;"></a>
+				</p>
+			    <strong>Build Pipeline & Bugfixing, and Feature Implementation</strong>
+			    <p>
+				  My work mostly focussed on improving/implementing our build pipeline, bugfixing, and feature implementation.
+			    </p>
+			  
+			    <dl>
+				  <dt><strong>Systems & Tools</strong></dt>
+				  <dd>I implemented requested features via scripts, but also ensured required parameters could be tweaked from the Unity editor environment and was well documented. This allowed our designers to tweak the feel of mechanics without having to modify the underlying script.</dd>
+				  <dd>I also focused on staying familiar with the overall structure of the codebase and tracking down bugs. </dd>
+				
+				  <dt><strong>Build Pipeline</strong></dt>
+				  <dd>I spent a lot of time managing the project's Git (and later Git LFS) implementation. </dd>
+				  <dd>This involved getting up to speed with best practices and communicating these to other team members who had focused on other areas, as well as resolving conflicts and helping with other issues as they occurred.</dd>
+			    </dl>
+
+			    <p>
+				  In hindsight, investing more time in early-stage planning would have prevented significant time spent on resolving issues that occured later on. This project was an invaluable lesson in the importance of a clear technical roadmap. It was a great experience in working on a project with a large group of people.
+			    </p>
+			  </section>
+            </p>
+			
+          </div>
+
         </div>
       </div>
     </div>
 
-    <footer>  
-      Footer region
+    <footer>
+      James Morton Portfolio - 2026
     </footer>
-    
+
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
-    
+
   </body>
 </html>
